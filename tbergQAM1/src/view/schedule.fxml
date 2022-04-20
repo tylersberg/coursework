@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.Schedule">
+   <children>
+      <TabPane prefHeight="800.0" prefWidth="1132.0" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab fx:id="allTab" text="All">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="allTable" layoutX="-5.0" layoutY="-1.0" prefHeight="800.0" prefWidth="1200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <columns>
+                              <TableColumn fx:id="appointmentIdCol" prefWidth="120.0" text="Appointment ID" />
+                              <TableColumn fx:id="titleCol" prefWidth="75.0" text="Title" />
+                              <TableColumn fx:id="descriptionCol" prefWidth="200.0" text="Description" />
+                              <TableColumn fx:id="locationCol" prefWidth="75.0" text="Location" />
+                              <TableColumn fx:id="contactCol" prefWidth="75.0" text="Contact" />
+                              <TableColumn fx:id="typeCol" prefWidth="75.0" text="Type" />
+                              <TableColumn fx:id="startCol" prefWidth="75.0" text="Start" />
+                              <TableColumn fx:id="endCol" prefWidth="75.0" text="End" />
+                              <TableColumn fx:id="customerIdCol" prefWidth="100.0" text="Customer ID" />
+                           </columns>
+                           <columnResizePolicy>
+                              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                           </columnResizePolicy>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="weekTab" text="This Week">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="weekTable" layoutX="-5.0" layoutY="-1.0" prefHeight="709.0" prefWidth="1200.0" AnchorPane.bottomAnchor="-22.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <columns>
+                              <TableColumn fx:id="appointmentIdColWeek" prefWidth="120.0" text="Appointment ID" />
+                              <TableColumn fx:id="titleColWeek" prefWidth="75.0" text="Title" />
+                              <TableColumn fx:id="descriptionColWeek" prefWidth="200.0" text="Description" />
+                              <TableColumn fx:id="locationColWeek" prefWidth="75.0" text="Location" />
+                              <TableColumn fx:id="contactColWeek" prefWidth="75.0" text="Contact" />
+                              <TableColumn fx:id="typeColWeek" prefWidth="75.0" text="Type" />
+                              <TableColumn fx:id="startColWeek" prefWidth="75.0" text="Start" />
+                              <TableColumn fx:id="endColWeek" prefWidth="75.0" text="End" />
+                              <TableColumn fx:id="customerIdColWeek" prefWidth="100.0" text="Customer ID" />
+                           </columns>
+                           <columnResizePolicy>
+                              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                           </columnResizePolicy>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="monthTab" text="This Month">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="monthTable" layoutX="-5.0" layoutY="-1.0" prefHeight="687.0" prefWidth="1139.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <columns>
+                              <TableColumn fx:id="appointmentIdColMonth" prefWidth="120.0" text="Appointment ID" />
+                              <TableColumn fx:id="titleColMonth" prefWidth="75.0" text="Title" />
+                              <TableColumn fx:id="descriptionColMonth" prefWidth="200.0" text="Description" />
+                              <TableColumn fx:id="locationColMonth" prefWidth="75.0" text="Location" />
+                              <TableColumn fx:id="contactColMonth" prefWidth="75.0" text="Contact" />
+                              <TableColumn fx:id="typeColMonth" prefWidth="75.0" text="Type" />
+                              <TableColumn fx:id="startColMonth" prefWidth="75.0" text="Start" />
+                              <TableColumn fx:id="endColMonth" prefWidth="75.0" text="End" />
+                              <TableColumn fx:id="customerIdColMonth" prefWidth="100.0" text="Customer ID" />
+                           </columns>
+                           <columnResizePolicy>
+                              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                           </columnResizePolicy>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+   </children>
+</VBox>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="600.0" prefWidth="400.0" spacing="10.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.AppointmentForm">
+   <children>
+      <Label fx:id="titleLabel" contentDisplay="CENTER" text="titleLabel">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+         <children>
+            <Label text="Title:" />
+            <TextField fx:id="titleField" alignment="CENTER_RIGHT" />
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <padding>
+            <Insets right="20.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+         <children>
+            <Label text="Appointment ID:" />
+            <TextField fx:id="idField" alignment="CENTER" editable="false" promptText="ID will be assigned" />
+         </children>
+         <padding>
+            <Insets right="20.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+         <children>
+            <Label text="Type:" />
+            <TextField fx:id="typeField" alignment="CENTER_RIGHT" />
+         </children>
+         <padding>
+            <Insets right="20.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+         <padding>
+            <Insets right="20.0" />
+         </padding>
+         <children>
+            <Label text="Description:" />
+            <TextField fx:id="descriptionField" alignment="CENTER_RIGHT" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+         <padding>
+            <Insets right="20.0" />
+         </padding>
+         <children>
+            <Label text="Location:" />
+            <TextField fx:id="locationField" alignment="CENTER_RIGHT" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+         <padding>
+            <Insets right="20.0" />
+         </padding>
+         <children>
+            <Label text="Contact:" />
+            <ComboBox fx:id="contactComboBox" prefWidth="150.0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+         <padding>
+            <Insets right="20.0" />
+         </padding>
+         <children>
+            <Label text="Customer ID:" />
+            <TextField fx:id="customerId" alignment="CENTER_RIGHT" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+         <padding>
+            <Insets right="20.0" />
+         </padding>
+         <children>
+            <Label text="User ID:" />
+            <TextField fx:id="userId" alignment="CENTER_RIGHT" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+         <padding>
+            <Insets right="20.0" />
+         </padding>
+         <children>
+            <Label text="Start Time:" />
+            <TextField fx:id="startField" alignment="CENTER_RIGHT" promptText="hh:mm" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+         <padding>
+            <Insets right="20.0" />
+         </padding>
+         <children>
+            <Label text="End Time:" />
+            <TextField fx:id="endField" alignment="CENTER_RIGHT" promptText="hh:mm" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+         <padding>
+            <Insets right="20.0" />
+         </padding>
+         <children>
+            <Label text="Date:" />
+            <DatePicker fx:id="date" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+         <padding>
+            <Insets right="20.0" />
+         </padding>
+         <children>
+            <Button fx:id="okButton" mnemonicParsing="false" prefWidth="60.0" text="Ok" />
+            <Button fx:id="cancelButton" mnemonicParsing="false" onAction="#cancel" prefWidth="60.0" text="Cancel" />
+         </children>
+      </HBox>
+   </children>
+</VBox>
