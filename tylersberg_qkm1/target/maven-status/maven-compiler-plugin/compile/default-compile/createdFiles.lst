@@ -1,0 +1,7 @@
+model/Part.class
+module-info.class
+model/Product.class
+model/Inventory.class
+qkm1/App.class
+model/Outsourced.class
+model/InHouse.class
