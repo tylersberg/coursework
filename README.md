@@ -5,5 +5,6 @@ There may also be aspects of them that do not make much sense outside of the con
 ### Contents
 - **bees.ipynb:** Demonstration of a simple convolutional neural network, using TensorFlow and Keras, for binary classification of bee images.
 - **tbergQAM1:** Schedule management application in Java, including: SQL database communication, login authentication, localization.
+  * Code for SQL queries is located in /tbergQAM1/src/data_access/SqlDB.java 
 - **tylerberg_qkm1:** Inventory management application in Java.
 - **nhp2:** Parcel delivery routing algorithm.
